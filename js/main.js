@@ -51,8 +51,13 @@ var op=document.getElementsByClassName("op");
  
  document.getElementById("egale").addEventListener("click", function calcul(){
             var str=operation.innerHTML;
-             res.innerHTML=eval(str);
-             operation.innerHTML+="="+eval(str);
+               if(eval(str)===Infinity)
+                { alert("division par zéro impossible")
+                        }
+               else {res.innerHTML=eval(str);
+                 operation.innerHTML+="="+eval(str);}
+
+             
          
  });
  document.getElementById("btrest").addEventListener("click", function reset(){
@@ -67,20 +72,23 @@ var op=document.getElementsByClassName("op");
                 
                  operation.innerHTML=str;
  }); 
-     
+
+document.getElementById("pourcent").addEventListener("click", function poursentage(){
+
+               var str=operation.innerHTML;
+               var prov=eval(str)/100;
+               operation.innerHTML=prov.toString();
+
+} );
+document.getElementById("effacer").addEventListener("click", function efface(){
+                    var str=operation.innerHTML;
+           operation.innerHTML=str.substr(0,str.length-1);
+
+
+});
 
 
 
-
-// document.getElementsByClassName("sig").addEventListener("click", signe );
-
-
-
-// function chiffre()
-// {
-//   res.innerHTML=this.innerHTML;
-
-// }
 
 
 
