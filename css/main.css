@@ -92,11 +92,55 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+                              SAHBIA CSS
    ========================================================================== */
+.calculatrice
+{
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(120,177,55);
+    height: 300px;
+    padding: 10px;
+}
+.cal
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.haut
+{
+    width:70%;
+    height: 20%;
 
+    margin: 10px auto;
+    padding-top: 10px;
+    background-color: rgb(244,243,242);
+    text-align: center;
+}
+#operation
+{
+    border-bottom: 1px solid rgb(120,177,55) ;
+    height: 50%;
+}
+.toutbutton
+{
+    margin: auto;
+    width: 70%;
+}
 
+.bt
+{
+    width: 22%;
+    margin: auto;
+    margin-right: 6px;
+}
+#btrest
+{
+    margin: 6px 30%;
+    width: 35%;
 
+}
 
 
 
