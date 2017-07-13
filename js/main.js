@@ -24,7 +24,8 @@ for( let i=0; i<c.length;i++ )
 
    
   operation.innerHTML+=c[i].innerHTML.toString();
-   
+   res.innerHTML=eval(operation.innerHTML);
+                                 
 
     });
 }
@@ -42,7 +43,6 @@ var op=document.getElementsByClassName("op");
                  
                  operation.innerHTML+=op[i].innerHTML;
                  
-                                 
 
                   });
 
