@@ -94,9 +94,16 @@ textarea {
 /* ==========================================================================
                               SAHBIA CSS
    ========================================================================== */
+  h1
+  {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
 .calculatrice
 {
-    max-width: 500px;
+    max-width: 100%;
     margin: auto;
     background-color: rgb(120,177,55);
     height: 300px;
@@ -126,7 +133,7 @@ textarea {
 .toutbutton
 {
     margin: auto;
-    width: 70%;
+    width: 100%;
 }
 
 .bt
@@ -144,9 +151,29 @@ textarea {
 
 
 
+@media(min-width: 700px)
+{
+
+   .calculatrice
+{
+    max-width: 70%;
+ }   
+
+.haut
+{
+    width:65%;
+    margin: 10px 15%;
 
 
+} 
+.toutbutton
+ {
+    margin: auto;
+    width: 70%;
 
+ }
+
+}
 
 
 
