@@ -1,57 +1,8 @@
-        // Adition
-        //----------
-function adition(a,b)
-{
-  return a+b;
-}
-        //  multiplication
-        //  -------------- 
-function multiplication(a,b)
-{
-  return a*b;
-}
-
-   // division
-   // ---------
-function division(a,b)
-{
-  if(b!==0)
-    {
-      return a/b;
-    }
-  else{ alert("division par zéro impossible");}
-}
-  //soustraction 
-  //------------
-function soustraction (a,b)
-{
-  return  a-b;
-}
-   // pourcentage
-   // -----------
-function pourcentage(a)
-{
-  return a/100;
-}
-     // racine carré
-     // ------------
-function racinecarre(a)
-{
-  return Math.sqrt(a);
-}
-    //signe
-    //-----
-function signe(a)
-{
-  if(a>0){ return -a;}
-  else {return --a;}
-}
+   
+   
 
 
-function reset()
-{
 
-}
 //FUNCTION FOR BUTTON
 var operation=document.getElementById("operation");
 var res=document.getElementById("result");
@@ -107,9 +58,15 @@ var op=document.getElementsByClassName("op");
  document.getElementById("btrest").addEventListener("click", function reset(){
       operation.innerHTML="";
       resl=0;
-      res.innerHTML=0;
+      res.innerHTML="";
  });
-   
+ document.getElementById("signe").addEventListener("click", function signe(){ 
+                var str=operation.innerHTML;
+                    str="(-"+str+")";
+                 console.log(str);
+                
+                 operation.innerHTML=str;
+ }); 
      
 
 
