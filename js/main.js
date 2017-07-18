@@ -86,6 +86,15 @@ document.getElementById("effacer").addEventListener("click", function efface(){
 
 
 });
+document.getElementById("parenthese").addEventListener("click", function parenth(){
+                    var str=operation.innerHTML;
+                 if(!str.includes("(" )){
+                     str=str+"(";
+                  
+                 } else { str=str+")";}
+              operation.innerHTML=str;
+
+});
 
 
 
